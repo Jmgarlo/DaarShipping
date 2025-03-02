@@ -1,0 +1,267 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; /* Fondo suave */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Coloca los elementos en columna */
+    align-items: center;
+    height: 100vh; /* La altura total de la ventana */
+}
+
+/* Estilos del header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    width: 100%;
+    border-bottom: 2px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Agrega margen: top, right, bottom, left */
+}
+.logo {
+    margin-left:10px;
+}
+/* Estilos para la navegación en el header */
+.nav-menu ul {
+    display: flex; /* Alinear los elementos en horizontal */
+    gap: 15px; /* Espaciado entre los botones */
+    list-style: none; /* Quitar los estilos de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu ul li {
+    margin: 0; /* Asegurar que no haya márgenes extras */
+}
+
+/* Estilos de los botones del menú */
+.nav-menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #6e83af; /* Azul */
+    color: white;
+    padding: 12px 30px; /* Aumenta el padding para hacerlos más grandes */
+    min-width: 150px; /* Ancho mínimo para que sean más anchos */
+    text-align: center; /* Centrar el texto */
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    background-color: rgb(18, 98, 184); /* Azul más oscuro en hover */
+}
+.logout-button {
+    margin-right:10px;
+}
+
+
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #c6c7cf;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    width: 70%;
+    margin-top: 30px; /* Espacio entre el header y el formulario */
+}
+.section-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #c6c7cf;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    width: 95%;
+    margin-top: 30px; /* Espacio entre el header y el formulario */
+}
+
+/* Títulos del formulario */
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Estilo para las secciones */
+.section h3 {
+    background-color: #6e83af; /* Color de fondo */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* Filas dentro de las secciones */
+.row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Etiquetas */
+.row label {
+    width: 20%;
+    margin-right: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+.search-container input {
+    width: 150px;
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+/* Select y Inputs */
+.selectSect1 {
+    width:950px;
+}
+.selectSect2 {
+    width:350px;
+    margin-right: 10px;
+}
+input[type="text"] {
+    width: 150px;
+}
+textarea {
+    width: 450px;
+}
+select, input[type="text"], textarea {
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+}
+
+/* Estilo para los botones */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #6e83af;
+    color: white;
+}
+
+button:hover {
+    background-color: #5a6e8a;
+}
+
+/* Estilo para los botones dentro de la sección */
+input[type="number"] {
+    width: 50px;
+    padding: 10px;
+}
+
+button[type="button"]:nth-child(2) {
+    background-color: #ec7c74;
+    color: white;
+}
+
+button[type="button"]:nth-child(2):hover {
+    background-color: #d45a53;
+}
+/* Estilos de la sección de botones */
+.form-actions {
+    display: flex;
+    justify-content: right;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Botón Guardar */
+.btn-guardar {
+    background-color: #72b375;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Botón Cancelar */
+.btn-cancelar {
+    background-color: #f07f77;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Efecto hover */
+.btn-guardar:hover {
+    background-color: #379e3e;
+}
+
+.btn-cancelar:hover {
+    background-color: #f04d4a;
+}
+
+/* Estilos del modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor del contenido del modal */
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+/* Botones dentro del modal */
+.modal-content button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6e83af;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background-color: #0056b3;
+}
+
+/* Botón de cancelar */
+#cerrarModal {
+    background-color: red;
+}
+
+#cerrarModal:hover {
+    background-color: darkred;
+}
